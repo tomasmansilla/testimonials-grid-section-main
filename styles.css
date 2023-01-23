@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+  box-sizing: border-box;
+
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+  --font-semibold: 500;
+  --font-bold: 600;
+
+  --color-bg-color: hsl(210, 46%, 95%);
+  --text-color: hsl(0, 0%, 81%, 0.7);
+  --white-color: hsl(0, 0%, 100%);
+  --card-heading-color: var(--white-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-semibold);
+  background-color: var(--text-color);
+  color: var(--text-color);
+}
+
+/* grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 22em;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+/* card | grid item */
+.card {
+  padding: 2em;
+  border-radius: 0.5em;
+  background-color: var(--card-bg-color);
+}
+
+/* quote pattern bg */
+.card:first-of-type{
+  position: relative;
+}
+
+.card:first-of-type::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 1.5em;
+  width: 7em;
+  height: 7em;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  mix-blend-mode: screen;
+}
+
+.card--violet {
+  --card-bg-color: hsl(264, 64%, 52%);
+  --card-img-border-color: hsl(210, 46%, 95%, 0.5);
+}
+
+.card--gray {
+  --card-bg-color: hsl(217, 19%, 35%);
+  --card-img-border-color: hsl(210, 46%, 95%, 0.5);
+}
+
+.card--dark-gray {
+  --card-bg-color: hsl(219, 29%, 14%);
+  --card-img-border-color: hsl(264, 64%, 52%);
+}
+
+.card--white {
+  --card-heading-color: hsl(217, 19%, 35%);
+  --card-bg-color: var(--white-color);
+  --text-color:  hsl(0, 0%, 60%);
+}
+
+/* card-header */
+
+.card__header {
+  margin-bottom: 1em;
+}
+
+.card__img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border-color: white;
+  border: 2px solid var(--card-img-border-color);
+}
+
+.card__author {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.9rem;
+  margin-left: 0.7em;
+}
+
+.card__author-name {
+  color: var(--card-heading-color);
+}
+
+.card__author-status {
+  font-size: 0.78rem;
+}
+
+/* card-body */
+.card__subject {
+  font-size: 1.4rem;
+  font-weight: var(--font-bold);
+  color: var(--card-heading-color);
+  margin-bottom: 1em;
+;}
+
+.card__text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-color);
+}
