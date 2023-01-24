@@ -4,7 +4,7 @@
 
 ## [Live]() | [Solution]() | [Challenge](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
 
-This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,6 +32,7 @@ Users should be able to:
 - Desktop Design:
   ![desktop-design](/design/desktop-design.png "desktop design")
 - Mobile Design:
+
   ![mobile-design](/design/mobile-design.png "mobile design")
 
 ## My process
